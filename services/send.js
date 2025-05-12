@@ -1,5 +1,6 @@
 const transporter = require('./transporter');
 
+
 const sendVerificationEmail = async (fullname, email, token) => {
     console.log("Sending email to: ", email);
     const emailOptions = {
@@ -15,7 +16,7 @@ const sendVerificationEmail = async (fullname, email, token) => {
        </div>
         `
     }
-    transporter.sendMail(emailOptions, (error, info) => {
+    transporter.sendEmail(emailOptions, (error, info) => {
         if(error){
             console.log(error);
         }
