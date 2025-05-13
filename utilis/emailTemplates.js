@@ -37,7 +37,7 @@ const bookingConfirmationTemplate = ({ event, user, bookingId, qrCodeUrl }) => {
             <img src="${qrCodeUrl}" alt="Booking QR Code" " />
           </div>
           <p>We look forward to seeing you at the event!</p>
-            <a href="http://localhost:5173/dashboard" className="button">View Your Bookings</a>
+            <a href="https://event-management-frontend-drab.vercel.app/dashboard" className="button">View Your Bookings</a>
           </div>
           <div className="footer">
             <p>Event Management System &copy; ${new Date().getFullYear()}</p>
@@ -97,7 +97,7 @@ const eventCreationConfirmationTemplate = ({ event, user, qrCodeUrl }) => {
               </div>
             ` : ''}
             <p>Thank you for using our platform to organize your event!</p>
-            <a href="http://localhost:3000/dashboard" className="button">View Your Events</a>
+            <a href="https://event-management-frontend-drab.vercel.app/dashboard" className="button">View Your Events</a>
           </div>
           <div className="footer">
             <p>Event Management System © ${new Date().getFullYear()}</p>
